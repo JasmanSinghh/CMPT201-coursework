@@ -1,0 +1,31 @@
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+  FILE *stream;
+  char *buff = NULL;
+  size_t len = 0;
+  ssize_t nread;
+  
+  printf("Please enter some text: ", stdout):
+  fflush(stdout);
+
+  nread = getline(&buff, &len, stdin)
+  
+  printf("Token:\n");
+  char *saveptr = NULL;
+  char *ret = strtok_r(buff, " ", &saveptr);
+  
+  while (ret != NULL){
+    printf(" %s\n", ret)
+    char ret2 = strtok_r(NULL, " ", &saveptr);
+
+  }
+
+//  char *ret2 = strok_r(NULL, " ",&saveptr);
+
+
+  free(buff);
+}

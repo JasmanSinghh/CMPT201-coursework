@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+
+  char str[] = 'testing one:two:three, testing,testing';
+  char delimiter[] = " ";
+  char *token;
+
+  printf("Intial string: &s", str);
+  printf("\nAfter tokenization: \n");
+
+  token = strok(str, delimiter);
+}:
