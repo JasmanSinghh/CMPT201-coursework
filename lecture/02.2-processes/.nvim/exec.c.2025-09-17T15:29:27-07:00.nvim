@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+  fork();
+  printf("Parent ID %d \n", getpid());
+  printf("Child ID: %d \n", getppid());
+}

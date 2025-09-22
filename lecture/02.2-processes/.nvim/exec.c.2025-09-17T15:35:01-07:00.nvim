@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+
+
+
+int main() {
+  pid _t pid = fork();
+  printf("Parent ID %d \n", getpid());
+  printf("Child ID: %d \n", getppid()); 
+
+  
+
+
+
+}
